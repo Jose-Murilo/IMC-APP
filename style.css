@@ -12,13 +12,14 @@
 
 body {
     font-size: 1.6rem;
-
+    height: 100vh;
     background-image: url(image/bg3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: brightness(50%);
     color: white;
+    overflow-y: hidden;
 }
 
 .container {
@@ -27,7 +28,7 @@ body {
 
 .container-calculater {
     width: 32.0rem;
-    margin: 7.2rem auto;
+    margin: 4.2rem auto;
     padding: 3.2rem 1.6rem;
 
     background: rgba(0, 0, 0, 0.5);
@@ -81,7 +82,6 @@ aside {
 }
 
 aside h2 {
-    margin-top: 2.4rem;
     font-size: 2.4rem;
     line-height: 3.2rem;
 }
@@ -145,4 +145,10 @@ footer {
     font-size: 1.8rem;
     
     padding: 4.8rem 0rem 1.6rem;
+}
+
+@media (min-width: 1365px) {
+    footer {
+        padding: 6.8rem 0rem 1.6rem;
+    }
 }
